@@ -30,3 +30,10 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 // Save the list to database
+
+$("#save").click(function(){
+    firebase.firestore().collection("mylist").add({
+      item: "try it"
+    });
+    console.log("save it");
+});
