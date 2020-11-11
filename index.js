@@ -40,7 +40,5 @@ $("#save").click(function(){
     firebase.firestore().collection("mylist").add({
       item: value
     });
-
   });
-    
 });
